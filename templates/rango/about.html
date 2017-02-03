@@ -6,15 +6,25 @@
         <title>Rango</title>
     </head>
     <body>
+        <h1>Rango says...</h1>
         <div>
-            About Page <br /> 
-            <strong>{{ boldmessage }}</strong><br />
+            hey there partner! <br/>
+            <strong>{{ boldmessage }}</strong><br/>
         </div>
-
         <div>
+<<<<<<< HEAD
             <a href="/rango/">Home</a><br/>
             <img src="{{MEDIA_URL}}images/cat.jpg"
                  alt="Picture of a cat." />
         </div>
     </body>
     </html>
+=======
+            <a href="/rango/">Index</a><br/>
+            <img src="{% static "images/rango.jpg" %}"
+                 alt="Rango: A Green Lizard" />
+            <img src="{{ MEDIA_URL}}cat.jpg">
+        </div>
+    </body>
+</html>
+>>>>>>> 544d59022a9c96bac5b5a5437a6f0219095535b1
