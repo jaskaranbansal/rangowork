@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 {% load staticfiles %}
 
 <html>
@@ -7,19 +6,17 @@
     <head>
         <title>Rango</title>
     </head>
-
     <body>
+        <h1>Rango says...</h1>
         <div>
-            About Page <br /> 
-            <strong>{{ boldmessage }}</strong><br />
+            hey there partner! <br/>
+            <strong>{{ boldmessage }}</strong><br/>
         </div>
-
         <div>
-		    <a href="/rango/">Home</a><br />
-            <img src="{{MEDIA_URL}}images/cat.jpg"
-                 alt="Picture of a cat." />
+            <a href="/rango/">Index</a><br/>
+            <img src="{% static "images/rango.jpg" %}"
+                 alt="Rango: A Green Lizard" />
+            <img src="{{ MEDIA_URL}}cat.jpg">
         </div>
-
     </body>
-
 </html>
